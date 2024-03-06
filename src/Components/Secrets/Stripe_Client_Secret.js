@@ -1,0 +1,4 @@
+const clientSecret = "sk_test_51NuBGvE9c1wXYOQOoFedpQCN8qLsSceTLFQ3PjWTtx330IB6fZ5fH6VNqoiQzOZcR5vAGurc3aAAK0VhqNYlwNFH009rHdAPSf"
+// const clientSecret = "sk\_live\_51OjvIiEMcRGeWIN2DcHRND7KBEltVbOcL2HLt0yVVY8ZJwDuzDKpOhdFdqkEWOqXRIeDaREv6iqUzzJ7V1vUUnUf00M69th7K7"
+
+export default clientSecret

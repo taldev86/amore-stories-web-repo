@@ -1,0 +1,80 @@
+body {
+    overflow-x: hidden;
+}
+
+.custom-hero-section {
+    background-image: url('../../public/img/hero/herosec1.png');
+    background-size: cover;
+    background-position: center;
+    height: calc(60vh - 60px); /* Adjust as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-hero-container {
+    text-align: center;
+}
+
+.custom-hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.custom-hero-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.login-button,
+.signup-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: red; /* Customize the color as needed */
+}
+
+.signup-button {
+    background-color: #333; /* Customize the color as needed */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .custom-hero-section {
+        height: calc(20vh - 5px); /* Adjust as needed */
+    }
+
+    .custom-hero-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .custom-hero-section {
+        height: calc(20vh - 5px); /* Adjust as needed */
+    }
+
+    .custom-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .custom-hero-buttons {
+        flex-direction: column;
+    }
+
+    .login-button,
+    .signup-button {
+        margin: 10px 0;
+    }
+}

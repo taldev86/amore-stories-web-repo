@@ -1,0 +1,10 @@
+.anime-details {
+    button:last-child {
+        display: none;
+    }
+    
+    /* Remove second-last button */
+    button:nth-last-child(2) {
+        display: none;
+    }
+}

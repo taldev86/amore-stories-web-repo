@@ -1,0 +1,12 @@
+.FormBody{
+    display: flex;
+    background-color: rgb(224, 224, 224);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.FormBody button{
+    margin-top: 20px;
+}

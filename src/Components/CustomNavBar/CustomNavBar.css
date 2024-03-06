@@ -1,0 +1,112 @@
+/* Navbar styles */
+.custom-navbar {
+    background-color: #B50E2C;
+    color: #fff;
+    padding: 0px 20px;
+}
+
+.custom-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.custom-navbar-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-navbar-menu li {
+    margin-right: 20px;
+}
+
+.custom-navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.custom-navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.custom-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.custom-login-signup-icons {
+    display: flex;
+    align-items: center;
+}
+
+.custom-login-signup-icons a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .custom-navbar-menu {
+        display: none;
+    }
+
+    .custom-menu-icon {
+        display: block;
+    }
+
+    .custom-navbar {
+        padding: 10px;
+    }
+
+    .custom-navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .custom-navbar-menu.active li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
