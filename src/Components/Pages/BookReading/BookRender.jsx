@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { ReactReader } from 'react-reader'; // Use useWindowSize hook
+import './BookRenderStyle.scss';
 
-const BookRender = ({ GeneratedUrl, CurretnChapterNo, chapterList }) => {
+const BookRender = ({ GeneratedUrl, CurretnChapterNo, chapterList, BannerUri, Author, Title }) => {
   const [location, setLocation] = useState(0);
   const width = "100%"
   const height = "100%"
-
 
   useEffect(()=>{
     if(chapterList[CurretnChapterNo].href) {
@@ -13,18 +13,40 @@ const BookRender = ({ GeneratedUrl, CurretnChapterNo, chapterList }) => {
     }
   },[CurretnChapterNo])
 
-  return (
-    <div style={{ height: '100vh' }}>
+  return (   
+    <div className='wrap-book-reader' style={{ height: height }}>  
+      <div className='info-book'>
+        <div className='image-book' >
+          <img src={BannerUri} alt='' />
+        </div>
+        <div className="title-book">
+          {Title}
+        </div>
+        <div className="author">
+          Author: {Author}
+        </div>
+      </div>
+      <div className='line'></div>
       <ReactReader
         url={GeneratedUrl}
         location={location}
         locationChanged={(loc) => setLocation(loc)}
         showToc={false}
+        stylesheet={'http://localhost:3000/style'}
         epubOptions={{
           flow: 'scrolled',
           minSpreadWidth:22,
-          preventTextSelection: true
+          // preventTextSelection: true,
+          height: height,
         }}
+        getRendition={(rendition) => {
+          rendition.themes.fontSize('20px')
+          rendition.themes.font('Vollkorn,serif')
+          rendition.themes.override('color', '#3a4a5a')
+          rendition.themes.override('min-height', '20px')
+          rendition.themes.override('line-height', '33px')
+        }}
+        readerStyles={{}}
         swipeable={false}
         height={height}
         width={width} 

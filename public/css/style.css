@@ -22,6 +22,14 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+.block_9 {
+  color: white;
+  display: block;
+  line-height: 2;
+  text-indent: 36pt;
+  margin: 0;
+  padding: 0
+  }
 html,
 body {
  height: 100%;

@@ -1,0 +1,61 @@
+.wrap-book-reader {
+    .info-book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .image-book {
+            position: absolute;
+            top: 100px;
+
+            img {
+                height: 286px;
+                border-radius: 3px;
+            }
+        }
+
+        .title-book {
+            font-size: 20px;
+            font-family: Vollkorn, serif;
+            font-weight: 700;
+            color: #3a4a5a;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 245px;
+        }
+
+        .author {
+            font-size: 16px;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 500;
+            color: rgba(67, 83, 102, .6);
+            line-height: 24px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+
+    .line {
+        width: 100%;
+        height: 2px;
+        background: rgba(170, 187, 204, .4);
+        margin-top: 43px;
+        margin-bottom: 43px;
+        position: relative;
+    }
+
+    .block_9 {
+        color: white;
+        display: block;
+        line-height: 2;
+        text-indent: 36pt;
+        margin: 0;
+        padding: 0
+    }
+}
+
+.epub-view {
+    color: red;
+}

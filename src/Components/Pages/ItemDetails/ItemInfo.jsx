@@ -313,10 +313,10 @@ const ItemInfo = () => {
                 </div>
               </div>
             ) : (
-              <section className="anime-details spad">
-                <div className="container">
+              <section className="anime-details spad" style={{backgroundColor:readBook === true ? '#f4f6f8' : 'white', paddingTop: 100}}>
+                <div className="container" style={{backgroundColor: 'white'}} >
                   {readBook === true ?
-                    <BookRender GeneratedUrl={bookUrl} CurretnChapterNo={CurretnChapterNo} chapterList={chapters_list} />
+                    <BookRender GeneratedUrl={bookUrl} CurretnChapterNo={CurretnChapterNo} chapterList={chapters_list} BannerUri ={bannerUri} Author={book.author}  Title={book.title}/>
                     :
                     <BookDetails />
                   }

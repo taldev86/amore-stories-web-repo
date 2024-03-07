@@ -20,7 +20,7 @@
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
     "react-owl-carousel": "^2.3.3",
-    "react-reader": "^2.0.4",
+    "react-reader": "^2.0.9",
     "react-render": "^4.0.0",
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
